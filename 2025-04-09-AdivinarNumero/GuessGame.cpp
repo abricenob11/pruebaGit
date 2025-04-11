@@ -8,18 +8,33 @@
 
 #include <iostream>
 
+//declaration
+void play(void);
+
 int main(void){
+    play();
+    return 0;
+}
+
+//implementacion
+
+void play(void){
     const int NUM = 10;
+
+    const int MIN = 1;
+    const int MAX = 100;
+
+
     int guessed_number = NUM+1;
 
     while(guessed_number != NUM){ 
         
-        std::cout<< "Adivina un numero entre 1 y 100:\n";
+        std::cout<< "Adivina un numero entre " << MIN << " y " << MAX << "\n";
         std::cin>> guessed_number;
 
             //validación del rango
 
-            if(guessed_number<100 && guessed_number>1){ 
+            if(guessed_number<=100 && guessed_number>=1){ 
 
                 if(guessed_number == NUM){
                     std::cout << "Ganó!!! ;)\n";
@@ -33,5 +48,4 @@ int main(void){
             }
 
     }
-    return 0;
 }
