@@ -10,15 +10,14 @@
 
 int main(void){
     const int NUM = 10;
-    int guessed_number;
+    int guessed_number = NUM+1;
 
-    for(; ; ){ 
+    while(guessed_number != NUM){ 
         std::cout<< "Adivina un numero entre 1 y 100:\n";
         std::cin>> guessed_number;
 
         if(guessed_number == NUM){
             std::cout << "Ganó!!! ;)\n";
-            break;
         } else if(guessed_number > NUM){
             std::cout << "Te pasaste\n";
         } else{ // es menor
