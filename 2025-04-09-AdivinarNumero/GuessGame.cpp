@@ -7,23 +7,30 @@
 */
 
 #include <iostream>
+#include <random>
 
 //declaration
-void play(void);
+void play(int success, int min_val, int max_val);
 
 int main(void){
-    play();
+    play(10, 1, 100);
     return 0;
 }
 
 //implementacion
 
-void play(void){
-    const int NUM = 10;
+void play(int success, int min_val, int max_val){
+    
+    const int MIN = min_val;
+    const int MAX = max_val;
 
-    const int MIN = 1;
-    const int MAX = 100;
+    std::random_device rd;
+    std::mt19937 gen(rd());
+    std::uniform_int_distribution<> distrib(MIN, MAX);
+    
+    const int NUM = distrib(gen);
 
+    std::cout << "\nnumero random: " << NUM <<"\n";
 
     int guessed_number = NUM+1;
 
