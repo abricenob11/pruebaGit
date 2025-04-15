@@ -5,7 +5,12 @@ double pi_aprox(int n);
 
 int main (void){
     
-    std::cout<<"Para n: 5 pi es igual a: " << pi_aprox(5) << "\n"; 
+    std::cout<<"valor de pi es " << M_PI << "\n";
+
+    for(int i=1; i<=20; i++){ 
+        std::cout<<"Para n: " << i << " pi es igual a: " << pi_aprox(i) << " y la diferencia relativa con el valor real de pi es: " 
+            << abs(1.0-(pi_aprox(i)/M_PI)) <<"\n"; 
+    }
     
     return 0;
 }
