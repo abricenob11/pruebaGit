@@ -4,12 +4,14 @@
 double pi_aprox(int n);
 
 int main (void){
-    
-    std::cout<<"valor de pi es " << M_PI << "\n";
+    double pi;
+    std::cout.precision(20);
+    std::cout.setf(std::ios::scientific);
 
     for(int i=1; i<=20; i++){ 
-        std::cout<<"Para n: " << i << " pi es igual a: " << pi_aprox(i) << " y la diferencia relativa con el valor real de pi es: " 
-            << abs(1.0-(pi_aprox(i)/M_PI)) <<"\n"; 
+        pi = pi_aprox(i);
+        std::cout<<"Para n: " << i << " pi es igual a: " << pi << " y la diferencia relativa con el valor real de pi es: " 
+            << abs(1.0-(pi/M_PI)) <<"\n"; 
     }
     
     return 0;
