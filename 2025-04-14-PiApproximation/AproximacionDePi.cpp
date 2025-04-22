@@ -10,7 +10,7 @@ int main (void){
 
     for(int i=1; i<=20; i++){ 
         pi = pi_aprox(i);
-        std::cout<<"Para n: " << i << " pi es igual a: " << pi << " y la diferencia relativa con el valor real de pi es: " 
+        std::cout<<"Para n: " << i << ", pi es igual a: " << pi << " y la diferencia relativa con el valor real de pi es: " 
             << std::abs(1.0-(pi/M_PI)) <<"\n"; 
     }
     
