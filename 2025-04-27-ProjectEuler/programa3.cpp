@@ -18,7 +18,6 @@ long sumaImpares(int v, long suma){
     if(v%2!=0){
         suma+=v;
     }
-
     return suma;
 }
 
