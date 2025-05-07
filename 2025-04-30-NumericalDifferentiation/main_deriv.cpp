@@ -14,6 +14,9 @@ int main(int argc, char **argv) {
     // open file for writing
     std::ofstream file("derivatives.txt");
 
+    //file.precision(15);
+    //file.setf(std::ios::scientific);
+
     for(double h = 1.0e-20; h <= 1.0; h *= 10.0) {
         double forward_result = forward_diff(x, h, f);
         double central_result = central_diff(x, h, f);
