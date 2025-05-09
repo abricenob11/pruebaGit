@@ -3,4 +3,4 @@
 
 using fptr = std::function<double(double)>;
 
-double trapezoid(double a, double b, int n fptr fun);
+double trapezoid(double a, double b, int n, fptr fun);

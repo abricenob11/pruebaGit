@@ -4,6 +4,8 @@
 double f(double x);
 
 int main(int argc, char **argv){
+    std::cout.precision(15);
+    std::cout.setf(std::ios::scientific);
 
     std::cout << trapezoid(0.0, 1.0, 10, f) << "\n";
     std::cout << trapezoid(0.0, 1.0, 1000, f) << "\n";
