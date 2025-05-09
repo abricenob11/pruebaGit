@@ -43,17 +43,18 @@ bool isprime(long n) {
 }
 
 long largest_factor (long number){
-
     long n;
-    for(long ii=2; ii<number; ii++){
-        if(isprime(ii)){
-            n=ii;
+    int contador=0;
+    do{ 
+        for(long ii=2; ii<number; ii++){
+            if(isprime(ii)){
+                n=ii;
+            }
+            while(number%n==0 && number/n!=1){
+            number /= n;
+            }
         }
-
-        while(number%n==0 && number/n!=1){
-           number /= n;
-        }
-    }
-
+    contador++;
+    }while(contador<2)
     return number;
 }
