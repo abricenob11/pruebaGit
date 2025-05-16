@@ -43,3 +43,7 @@ double richardson(double a, double b, fptr f, int N, algptr alg, int alpha){
     double v2= alg(a, b, 2*N, f);
     return(aux*v2 - v1)/(aux-1.0);
 }
+
+double gauss2(double a, double b, fptr fun){
+    
+}
