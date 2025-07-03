@@ -1,0 +1,7 @@
+1. vectorExercises
+entrada por consola
+precision
+llenado de un vector y promedio
+
+
+no mucho mas en lo otro

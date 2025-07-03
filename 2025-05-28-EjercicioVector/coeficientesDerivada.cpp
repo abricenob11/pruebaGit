@@ -5,7 +5,7 @@
 #include <fstream>
 
 
-//g++ -std=c++17 -fsanitize=undefined,leak,address
+//g++ -g -std=c++17 -fsanitize=undefined,leak,address
 
 void derivada (const std::vector <double> &coe, std::vector<double> &deriv);
 double eval(const std::vector <double> &coe, double x);

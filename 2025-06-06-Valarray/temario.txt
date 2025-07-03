@@ -1,0 +1,12 @@
+1. filterPoints
+funcion print
+uso de mask
+
+2. dotProduct
+cosas basicas
+
+3. maks
+otra aplicacion de maks
+
+4. va-ex2
+mas cosas usando valarray

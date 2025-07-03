@@ -1,0 +1,3 @@
+1. robot
+mensaje de error cuando no se cumple por ejemplo la correcta entrada en consola
+multiplicacion matriz y arreglo

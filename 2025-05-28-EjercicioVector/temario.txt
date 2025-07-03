@@ -1,0 +1,9 @@
+1. coeficientesDerivada
+tiene el compilador!
+
+2. minmaxVec
+minimo, maximo indice del minimo e indice del maximo de un vector
+rellenado random tambien
+
+3. minmaxVec2
+lo mismo pero con funcione simplificadas de ia

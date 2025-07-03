@@ -1,0 +1,13 @@
+1. main
+teoria matrices
+algunas cosas para implementar matrix.utils
+
+2.matrix.utils
+llenado matriz
+llenado random de matriz
+imprimir matriz
+transpuesta de matriz
+...
+
+3. matrix_utils.h
+aumento del tiempo en funcion del lado de la matriz codigo

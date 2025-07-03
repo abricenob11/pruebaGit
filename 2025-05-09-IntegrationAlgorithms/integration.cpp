@@ -1,5 +1,16 @@
 #include "integration.h"
 
+
+/*entre dos puntos
+(b-a)/2 *(f(a) + f(b))
+
+delta x = b-a /N
+xk=x0 + k*deltax
+x0=a xN=b
+
+N-2
+*/
+
 double trapezoid(double a, double b, int N, fptr fun){
 
     double intervalo = (b-a)/N;
@@ -14,6 +25,13 @@ double trapezoid(double a, double b, int N, fptr fun){
 
     return intervalo*((v1/2) + sum + (v2/2));
 }
+
+/*
+entre dos puntos
+(b-a/6) * (f(a) + 4f(a+b/2) f(b))
+
+N-4
+*/
 
 double simpson(double a, double b, int N, fptr fun){
     // N tiene que ser par

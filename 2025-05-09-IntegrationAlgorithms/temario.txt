@@ -1,0 +1,6 @@
+1. integration.cpp
+trapezoid, simpson y richardson (utils)
+
+2. main
+precision
+comparacion de metodos

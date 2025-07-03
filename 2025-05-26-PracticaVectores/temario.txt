@@ -1,0 +1,27 @@
+1. dotProdudct
+usando la funcion inner_product
+
+2. estadistica
+leer el vector de un txt
+calcula media y mediana de los valores leidos
+
+3. normaArreglo
+se usan funciones lambda para cada paso
+for auto
+
+4.normaVector
+lo mismo que 3, tambien se usan lambda
+
+5. pnorm
+precision y lectura de consola
+
+6. practicaArreglo
+algunas cosas con arreglo y mostrar direccion memoria
+
+7. random_vector
+rellena un vector con # random
+los escribe en un txt
+funcion shuffle
+
+8.random_vector.h
+rellenar y mostrar vector usando lambda, for each..
